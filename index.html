@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculater</h1>
+   <div class="contener">
+    <input type="text" placeholder="Result" disabled id="res">
+   </div>
+   <div class="main">
+    <table border="2px">
+        <tr>
+            <td id="Ac" onclick="result('ac')">AC</td>
+            <td id="Del" onclick="result('del')">Del</td>
+            <td onclick="result('/') ">/</td>
+            <td onclick="result('*') ">X</td>
+        </tr>
+        <tr>
+            <td onclick="result('1') ">1</td>
+            <td onclick="result ('2')" >2</td>
+            <td onclick="result ('3')">3</td>
+            <td onclick="result ('+')">+</td>
+        </tr>
+        <tr>
+            <td onclick="result ('4')">4</td>
+            <td onclick="result ('5')">5</td>
+            <td onclick="result ('6')">6</td>
+            <td onclick="result ('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="result ('7')">7</td>
+            <td onclick="result ('8')">8</td>
+            <td onclick="result ('9')">9</td>
+            <td  rowspan="2" onclick="result('=')" class="new">=</td>
+        </tr>
+        <tr>
+            <td colspan="2" onclick="result ('0')">0</td>
+            <td onclick="result ('.')">.</td>
+           
+        </tr>
+    </table>
+   </div>
+   <p>made by sandeep kumar</p>
+   <p>ksandeep15267@gmail.com</p>
+   <script src="result.js"></script>
+</body>
+</html>
